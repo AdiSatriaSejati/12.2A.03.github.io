@@ -373,11 +373,11 @@ b {
 }
 
 a.en:before {
-  background-image: url("/IMG/English.png");
+  background-image: url("../IMG/English.png");
 }
 
 a.id:before {
-  background-image: url("/IMG/Indonesia.png");
+  background-image: url("../IMG/Indonesia.png");
 }
 
 .language:hover ul {

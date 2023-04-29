@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="home" lang="en">
+<head>
+    <title>Home | Bina Sarana Informatika University</title>
+    <link rel="icon" href="/IMG/Ico-BSI.ico" type="image/x-icon" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Bina Sarana Informatika University. | Kuliah...? BSI Aja!!! (Accredited B)" />
+    <meta name="keywords"
+        content="Bina Sarana Informatika University, UBSI, Bina Sarana Informatika, Best University, Universitas Swasta Terbaik" />
+    <meta name="author" content="Adi Satria Sejati" />
+    <meta property="og:site_name" content="Bina Sarana Informatika University" />
+    <meta property="og:site" content="index.html" />
+    <meta property="og:url" content="index.html" />
+    <meta property="og:title" content="Home | Bina Sarana Informatika University" />
+    <meta property="og:type" content="Websites" />
+    <meta property="og:description"
+        content="Bina Sarana Informatika University. | Kuliah...? BSI Aja!!! (Accredited B)" />
+    <!--
+____  ___ ____   ____ ____      ____      _____      _____   _____               ____     ______    _____  ____      _____              _____      _____       ____ ____ ____
+|  | /  / |  |   |  | |  |      |  |     /     \     |   |   |   |              /    \   |  __  |  / ____| |  |     /     \             |   |     /     \      |  | |  | |  |
+|  |/  /  |  |   |  | |  |      |  |    /   _   \    |   |___|   |             / /\   \  | |__) / | (___   |  |    /   _   \            |   |    /   _   \     |  | |  | |  |
+|     |   |  |   |  | |  |      |  |   /   /_\   \   |   _____   |             \/  )   ) |  __ (   \___  \ |  |   /   /_\   \   _____   |   |   /   /_\   \    |  | |  | |  |
+|  |\  \  |  |___|  | |  |____  |  |  /   /   \   \  |   |   |   | ____ ____ ____ /___/  | |__) \  ____) | |  |  /   /   \   \  |   |___|   |  /   /   \   \   |__| |__| |__|
+|__| \__\ |_________| |_______| |__| /___/     \___\ |___|   |___| |__| |__| |__| |___|  |______| |_____/  |__| /___/     \___\ |___________| /___/     \___\  |__| |__| |__|
+-->
+    <link rel="stylesheet" href="CSS/Styles.css">
+    <link rel="stylesheet" href="/CSS/Cookies Consent.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="/JS/Scroll.js"></script>
+    <script src="JS/Cookies Consent.js"></script>
+    <script src="https://kit.fontawesome.com/aedf1b7c79.js" crossorigin="anonymous"></script>
+    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
+    <script>
+        // Reads the value of a cookie by name or returns empty string
+        function getCookie(name) {
+            var b = document.cookie.match(
+                "(^|[^;]+)\\s*" + name + "\\s*=\\s*([^;]+)"
+            );
+            return b ? b.pop() : "";
+        }
+        // Actually starting analytics up
+        function addAnalytics() {
+            window.dataLayer = window.dataLayer || [];
+            function gtag() {
+                dataLayer.push(arguments);
+            }
+            gtag("js", new Date());
+            gtag("config", "UA-XXXXXXXX-X");
+        }
+        // Waiting for the load event
+        window.addEventListener("load", function () {
+            // Reading "cookieconsent_status" cookie
+            const cookieConsent = getCookie("cookieconsent_status");
+            // Start analytics if user consented or did not deny
+            if (cookieConsent === "allow" || cookieConsent === "") {
+                addAnalytics();
+            }
+            // Initialise cookie consent banner
+            window.cookieconsent.initialise({
+                palette: {
+                    popup: {
+                        background: "rgba(0, 0, 255, 0.7)",
+                        text: "#fff",
+                    },
+                    button: {
+                        background: "#0b0e2b",
+                        text: "#ffffff",
+                    },
+                },
+                type: "opt-out",
+                content: {
+                    allow: "Accept All Cookies",
+                    dismiss: "Accept All Cookies",
+                    deny: "Reject All Cookies",
+                },
+                // Reload the page on user choice to make sure cookie is set
+                onStatusChange: function (status, chosenBefore) {
+                    location.reload();
+                },
+            });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <!-------------------------------------------------Start Navigation Top Left--------------------------------------------->
+        <div class="topleftnav">
+            <a href="https://repository.bsi.ac.id/">Repository</a>
+            <b>|</b>
+            <a href="https://kemahasiswaan.bsi.ac.idhttps://pintek.id/">Student Affairs</a>
+            <b>|</b>
+            <a href="https://pintek.id/">Instalment Payment</a>
+            <b>|</b>
+            <a href="http://career.bsi.ac.id/">Career Center</a>
+            <b>|</b>
+            <a href="https://staff.bsi.ac.id/">Employee</a>
+            <!--------------------------------------------------End Navigation Top Left----------------------------------------------->
+            <!-----------------------------------------------------Start Search Bar--------------------------------------------------->
+            <div class="search-container">
+                <div class="search-inputs">
+                    <input type="text" class="search" id="#search">
+                    <button class="submitBtn" type="submit" id="#submit">
+                        <svg width="10" height="10" viewBox="0 0 20 20">
+                            <path
+                                d="m132.77 118.03l-27.945-27.945c6.735-9.722 10.1-20.559 10.1-32.508 0-7.767-1.508-15.195-4.523-22.283-3.01-7.089-7.088-13.199-12.221-18.332-5.133-5.133-11.242-9.207-18.33-12.221-7.09-3.01-14.518-4.522-22.285-4.522-7.767 0-15.195 1.507-22.283 4.522-7.089 3.01-13.199 7.088-18.332 12.221-5.133 5.133-9.207 11.244-12.221 18.332-3.01 7.089-4.522 14.516-4.522 22.283 0 7.767 1.507 15.193 4.522 22.283 3.01 7.088 7.088 13.197 12.221 18.33 5.133 5.134 11.244 9.207 18.332 12.222 7.089 3.02 14.516 4.522 22.283 4.522 11.951 0 22.787-3.369 32.509-10.1l27.945 27.863c1.955 2.064 4.397 3.096 7.332 3.096 2.824 0 5.27-1.032 7.332-3.096 2.064-2.063 3.096-4.508 3.096-7.332.0001-2.877-1-5.322-3.01-7.331m-49.41-34.668c-7.143 7.143-15.738 10.714-25.787 10.714-10.05 0-18.643-3.572-25.786-10.714-7.143-7.143-10.714-15.737-10.714-25.786 0-10.05 3.572-18.644 10.714-25.786 7.142-7.143 15.738-10.714 25.786-10.714 10.05 0 18.643 3.572 25.787 10.714 7.143 7.142 10.715 15.738 10.715 25.786 0 10.05-3.573 18.643-10.715 25.786"
+                                transform="matrix(.11417.00745-.00745.11417 3.93 2.548)" fill="currentColor" />
+                        </svg>
+                        <span class="sr-only">Search</span>
+                    </button>
+                    <button class="closeBtn" type="button">╳</button>
+                </div><!-- .search-inputs -->
+                <div class="search-results">
+                </div>
+            </div>
+            <!------------------------------------------------------End Search Bar----------------------------------------------------->
+            <!-----------------------------------------------------Start translate----------------------------------------------------->
+            <div class="language">
+                <button class="language-selected"><span>Language</span><i class="fa-solid fa-earth-americas fa-2xl"></i>
+                    <ul class="droplang">
+                        <li><a href="index.html" class="en">English</a></li>
+                        <li><a href="/index.html" class="id">Indonesia</a></li>
+                    </ul>
+                </button>
+            </div>
+            <!------------------------------------------------------End translate------------------------------------------------------>
+            <!-------------------------------------------------Start Navigation Right-------------------------------------------------->
+            <div class="toprightnav">
+                <a href="https://elibrary.bsi.ac.id/">E-Library</a>
+                <b>|</b>
+                <a href="http://elearning.bsi.ac.id/">E-Learning</a>
+                <b>|</b>
+                <a href="https://ejournal.bsi.ac.id/ejurnal/">E-Journal</a>
+                <b>|</b>
+                <a href="http://alumni.bsi.ac.id/">Alumni</a>
+                <b>|</b>
+                <a href="https://www.bsi.ac.id/ubsi/kontak-kami.ajax">Contact</a>
+            </div>
+        </div>
+        <!---------------------------------------------------End Navigation Right--------------------------------------------------->
+        <!--------------------------------------------------Start Header Secondary--------------------------------------------------->
+        <div class="hList">
+            <a href="index.html">
+                <img class="logo" src="/IMG/Logo UBSI.png" alt="" </a>
+                <div class="menu">
+                    <a href="https://ubsi.pmbonline.id/pmb" class="menu-title">Admissions</a>
+                    <ul class="menu-dropdown">
+                    </ul>
+                </div>
+                <div class="menu">
+                    <a href="#" class="menu-title">Fakulty</a>
+                    <ul class="menu-dropdown">
+                        <li><a href="#">Informatics Engineering</a></li>
+                        <li><a href="#">Economics & Business</a></li>
+                        <li><a href="#">Communication & Language</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <a href="#" class="menu-title">Academic</a>
+                    <ul class="menu-dropdown">
+                        <li><a href="#">Lecturer Room</a></li>
+                        <li><a href="#">Academic Calendar</a></li>
+                        <li><a href="www.bsi.ac.id/ubsi/assets/file/Pedoman%20Akademik%20UBSI_revisi_1920.pdf">Academic
+                                Guidelines</a></li>
+                        <li><a href="#">Lecturer Profile</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <a class="menu-title">Student</a>
+                    <ul class="menu-dropdown">
+                    </ul>
+                </div>
+                <div class="menu">
+                    <a class="menu-title">Campus Location</a>
+                    <ul class="menu-dropdown">
+                    </ul>
+                </div>
+                <div class="menu">
+                    <a href="#" class="menu-title">About US</a>
+                    <ul class="menu-dropdown">
+                        <li><a href="https://www.bsi.ac.id/ubsi/sambutan-rektor.ajax">Rector's Speech</a></li>
+                        <li><a href="https://www.bsi.ac.id/ubsi/sejarah-ubsi.ajax">History</a></li>
+                        <li><a href="https://www.bsi.ac.id/ubsi/struktur-ubsi.ajax">Organizational Structure</a></li>
+                        <li><a href="https://www.bsi.ac.id/ubsi/visimisi">Vision & Mission</a></li>
+                    </ul>
+                </div>
+                <div class="menu">
+                    <a href="https://news.bsi.ac.id/" class="menu-title">News UBSI</a>
+                    <ul class="menu-dropdown">
+                    </ul>
+                </div>
+        </div>
+        <!----------------------------------------------------end Header Secondary-------------------------------------------------->
+        <!---------------------------------------------------------Slider------------------------------------------------------------>
+        <div class="container">
+            <div class="slider">
+                <div class="box1 box">
+                    <img src="/IMG/banner-1.jpg" alt="">
+                    <div class="illustration">
+                    </div>
+                </div>
+                <div class="box2 box">
+                    <img src="/IMG/banner-2.jpg" alt="">
+                    <div class="illustration">
+                    </div>
+                </div>
+                <div class="box3 box">
+                    <img src="/IMG/banner-3.jpg" alt="">
+                    <div class="illustration">
+                    </div>
+                </div>
+                <div class="box4 box">
+                    <img src="/IMG/banner-4.jpg" alt="">
+                    <div class="illustration">
+                    </div>
+                </div>
+                <div class="box5 box"><img src="/IMG/banner-5.jpg" alt="">
+                    <div class="illustration">
+                    </div>
+                </div>
+            </div>
+            <svg xmlns="" class="prev" width="56.898" height="91" viewBox="0 0 56.898 91">
+                <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(0 91) rotate(-90)" fill="#fff" />
+            </svg>
+            <svg xmlns="" class="next" width="56.898" height="91" viewBox="0 0 56.898 91">
+                <path d="M45.5,0,91,56.9,48.452,24.068,0,56.9Z" transform="translate(56.898) rotate(90)" fill="#fff" />
+            </svg>
+            <div class="trail">
+                <div class="box1 active">1</div>
+                <div class="box2">2</div>
+                <div class="box3">3</div>
+                <div class="box4">4</div>
+                <div class="box5">5</div>
+            </div>
+        </div>
+        <!-- ----------------------------------------------end Slider------------------------------------------------------------->
+    </header>
+    <!-----------------------------------------------------Start Arrow------------------------------------------------------------>
+    <a class="smoothscroll" href="#bounce">
+        <div class="mouse">
+            <div class="wheel"></div>
+        </div>
+    </a>
+    <a class="smoothscroll" href="#bounce">
+        <div class="scroll-down"></div>
+    </a>
+    <!------------------------------------------------------End Arrow------------------------------------------------------------>
+    <main id="bounce">
+        <!-----------------------------------------------Start Grid Layout------------------------------------------------------->
+        <div class="grid ">
+            <div class="item" tabindex="1">
+                <div class="bok">
+                    <div class="diamond"><span>1</span></div>
+                    <div class="tooltip">grid-area: hero</div>
+                </div>
+            </div>
+            <div class="item" tabindex="2">
+                <div class="bok">
+                    <div class="diamond"><span>2</span></div>
+                    <div class="tooltip">grid-area: big</div>
+                </div>
+            </div>
+            <div class="item" tabindex="3">
+                <div class="bok">
+                    <div class="diamond"><span>3</span></div>
+                    <div class="tooltip">grid-area: medium</div>
+                </div>
+            </div>
+            <div class="item" tabindex="4">
+                <div class="bok">
+                    <div class="diamond"><span>4</span></div>
+                    <div class="tooltip">grid-area: medium</div>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------------------End Grid Layout-------------------------------------------------------->
+        <!----------------------------------------------Start Filter Card-------------------------------------------------------->
+        <section class="hero-section">
+            <div class="card-grid">
+                <a class="card" href="#">
+                    <div class="card__background"
+                        style="background-image: url(https://images.unsplash.com/photo-1557177324-56c542165309?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80)">
+                    </div>
+                    <div class="card__content">
+                        <p class="card__category">Category</p>
+                        <h3 class="card__heading">Example Card Heading</h3>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background"
+                        style="background-image: url(https://images.unsplash.com/photo-1557187666-4fd70cf76254?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                    </div>
+                    <div class="card__content">
+                        <p class="card__category">Category</p>
+                        <h3 class="card__heading">Example Card Heading</h3>
+                    </div>
+                </a>
+                <a class="card" href="#">
+                    <div class="card__background"
+                        style="background-image: url(https://images.unsplash.com/photo-1556680262-9990363a3e6d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                    </div>
+                    <div class="card__content">
+                        <p class="card__category">Category</p>
+                        <h3 class="card__heading">Example Card Heading</h3>
+                    </div>
+                    </li>
+                    <a class="card" href="#">
+                        <div class="card__background"
+                            style="background-image: url(https://images.unsplash.com/photo-1557004396-66e4174d7bf6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60)">
+                        </div>
+                        <div class="card__content">
+                            <p class="card__category">Category</p>
+                            <h3 class="card__heading">Example Card Heading</h3>
+                        </div>
+                    </a>
+                </a>
+            </div>
+        </section>
+        <!-----------------------------------------------End Filter Card--------------------------------------------------------->
+        <!------------------------------------------Start Page Background Video-------------------------------------------------->
+        <div class="vid">
+            <video poster="/IMG/Thubnails.jpg" id="bgvid" playsinline autoplay muted loop>
+                <source src="/Video/UBSI.webm" type="video/webm">
+                <source src="/Video/UBSI.mp4" type="video/mp4">
+            </video>
+            <div id="polina">
+                <h1>Hai Sobat BSI...</h1>
+                <p>by Bina Sarana Informatika 23 Mar 2023
+                <p><a href="http://thenewcode.com/777/Create-Fullscreen-HTML5-Page-Background-Video"></a>
+                <p>After participating in a series of activities ORMIK SEMOT BSI University, you are officially a new
+                    student.</p>
+                <p>Congratulations on undergoing lectures and making achievements with Bina Sarana Informatika
+                    University.</p>
+                <p>Lectures..? BSI Aja!!</p>
+                <button>Pause</button>
+            </div>
+            <script src="JS/Page Background Video.js"></script>
+            <!-------------------------------------------End Page Background Video--------------------------------------------------->
+            <!-----------------------------------------------Start Hover Efect------------------------------------------------------->
+            <div class="kontainer">
+                <div class="kard">
+                    <div class="muka muka1">
+                        <div class="countent">
+                            <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/design_128.png?raw=true"
+                                alt="">
+                            <h3>Design</h3>
+                        </div>
+                    </div>
+                    <div class="muka muka2">
+                        <div class="countent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste
+                                veritatis
+                                provident at.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kard">
+                    <div class="muka muka1">
+                        <div class="countent">
+                            <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/code_128.png?raw=true"
+                                alt="">
+                            <h3>Code</h3>
+                        </div>
+                    </div>
+                    <div class="muka muka2">
+                        <div class="countent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste
+                                veritatis
+                                provident at.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="kard">
+                    <div class="muka muka1">
+                        <div class="countent">
+                            <img src="https://github.com/Jhonierpc/WebDevelopment/blob/master/CSS%20Card%20Hover%20Effects/img/launch_128.png?raw=true"
+                                alt="">
+                            <h3>Launch</h3>
+                        </div>
+                    </div>
+                    <div class="muka muka2">
+                        <div class="countent">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas cum cumque minus iste
+                                veritatis
+                                provident at.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!------------------------------------------------End Hover Efect-------------------------------------------------------->
+            <footer>
+                <div class="Animated">
+                    <div class="row">
+                        <div class="col">
+                            <img src="/IMG/Ico-BSI.png" class="logobot" alt="">
+                            <h1>Kuliah...? BSI AJA!!!</h1>
+                        </div>
+                        <div class="col">
+                            <h3>Campus<div class="underline"><span></span></div>
+                            </h3>
+                            <p>BSI</p>
+                            <p>Jl.Gatot Subroto No.VIII, Cimone</p>
+                            <p>Kec.Karawaci, Kota tangerang, Banten, 15114</p>
+                            <p class="email-id">12221455@bsi.ac.id</p>
+                            <h4>+62 85810209441</h4>
+                        </div>
+                        <div class="col">
+                            <h3>Links<div class="underline"><span></span></div>
+                            </h3>
+                            <ul>
+                                <li><a href="http://lppm.bsi.ac.id/">LPPM</a></li>
+                                <li><a href="http://sister.bsi.ac.id/auth/login">Sister</a></li>
+                                <li><a href="http://bsipesona.com/Home">Allure</a></li>
+                                <li><a href="http://ujiankampus.bsi.ac.id/login">Online Exams</a></li>
+                                <li><a href="http://bec.bsi.ac.id/">Entrepreneur Center</a></li>
+                                <li><a href="https://bintangsekolahindonesia.com/">Indonesian School Star</a></li>
+                            </ul>
+                        </div>
+                        <div class="col">
+                            <h3>Newsletter<div class="underline"><span></span></div>
+                            </h3>
+                            <form>
+                                <i class="fa-regular fa-envelope"></i>
+                                <input type="email" placeholder="Enter your email" required id="#search">
+                                <button type="submit" id="#submit"><i class="fa-solid fa-arrow-right"></i></button>
+                            </form>
+                            <div class="social-icons">
+                                <a href="https://www.facebook.com/Bina-Sarana-Informatika-201434683230801/"
+                                    class="fa-brands fa-facebook-f"></a>
+                                <a href="https://twitter.com/intent/follow?original_referer=http%3A%2F%2Fpmb.bsi.ac.id%2F&region=follow_link&screen_name=KuliahBSIAja&tw_p=followbutton&variant=2.0"
+                                    class="fa-brands fa-twitter"></a>
+                                <a href="https://www.youtube.com/kuliahbsiaja" class="fa-brands fa-youtube"></a>
+                                <a href="https://www.instagram.com/kuliahbsiaja/?hl=id"
+                                    class="fa-brands fa-instagram"></a>
+                                <a href="https://www.linkedin.com/school/universitas-bina-sarana-informatika/"
+                                    class="fa-brands fa-linkedin-in"></a>
+                            </div>
+                        </div>
+                        <hr>
+                        <p class="copyright">©Copyright 2023 Universitas Bina Sarana Informatika. All rights reserved.
+                        </p>
+                    </div>
+            </footer>
+        </div>
+    </main>
+    <script src="/JS/Search.js"></script>
+    <script src="/JS/Slider.js"></script>
+</body>
+</html>

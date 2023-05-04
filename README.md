@@ -6,5 +6,6 @@
 # Web Programming I
 # Kelompok #1 
 
-# Universitas Bina Sarana Informatika
-# 12221455@bsi.ac.id
+# By : Universitas Bina Sarana Informatika
+# Email : 12221455@bsi.ac.id
+# Youtube : @adisatriasejati2964

@@ -13,6 +13,5 @@ NIM      | NAMA                 | E-Mail
 12221257 | PETRUS E R MANULLANG | 12221257@bsi.ac.id
 12220642 | YUSTIANA             | 12220642@bsi.ac.id
 [title](https://em-content.zobj.net/source/microsoft-teams/337/woman_1f469.png)
-![alt text](https://em-content.zobj.net/source/microsoft-teams/337/woman_1f469.png)
 
 # By : Universitas Bina Sarana Informatika

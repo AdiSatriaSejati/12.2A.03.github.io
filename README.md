@@ -1,5 +1,5 @@
 
-# https://github.com/AdiSatria15/12.2A.03.github.io
+# adisatria15.github.io/12.2A.03.github.io/
 ## Universitas Bina Sarana Informatika
 **DIII Sistem Informasi** - *12.2A.03*
 ```

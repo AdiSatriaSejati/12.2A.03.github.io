@@ -1,7 +1,7 @@
 
 <h1 align="center">Universitas Bina Sarana Informatika</h1>
 <h2 align="center">DIII Sistem Informasi - 12.2A.03</h2>
-<h5>Visit  : https://adisatria15.github.io/12.2A.03.github.io/</h5>
+<h5>Klick ME >  : https://adisatria15.github.io/12.2A.03.github.io/</h5>
 
 ```
 726 - Web Programming I

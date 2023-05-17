@@ -426,7 +426,7 @@ ul li {
   min-width: 100%;
   padding: 15px 0;
   position: absolute;
-  background: rgba(0, 0, 100, 0.7);
+  background: transparent;
   border-radius: 5%;
   z-index: 12;
   transition: 0.5s padding, 0.5s background;
@@ -440,7 +440,9 @@ ul li {
 .menu-dropdown>* {
   overflow: hidden;
   height: 30px;
+  border-radius: 5px;
   padding: 5px 10px;
+  background: rgba(0, 0, 100, 0.5);
   white-space: nowrap;
   transition: 0.5s height cubic-bezier(0.73, 0.32, 0.34, 1.5),
     0.5s padding cubic-bezier(0.73, 0.32, 0.34, 1.5),
@@ -631,10 +633,9 @@ ul li {
 @supports (display: grid) {
   .grid {
     display: grid;
-    margin-top: -100px;
-    grid-gap: 1vw;
     height: 216vh;
-    padding: 1vw;
+    margin-top: -100px;
+    margin-bottom: 250px;
   }
 
   .grid {
@@ -654,6 +655,7 @@ ul li {
       grid-template-areas:
         "hero   hero   hero   med1   med1"
         "hero   hero   hero   med2   med2"
+        "big1   big1   big1   big1   big1"
         "big1   big1   big1   big1   big1";
     }
   }
@@ -665,6 +667,7 @@ ul li {
       grid-template-areas:
         "hero   hero   hero   med1   med1"
         "hero   hero   hero   med2   med2"
+        "big1   big1   big1   big1   big1"
         "big1   big1   big1   big1   big1";
     }
   }
@@ -767,19 +770,19 @@ ul li {
 }
 
 .grid .item:nth-child(1) {
-  background-image: url(../IMG/pmb_bg_2.jpg);
+  background-image: url(../IMG/2.jpg);
 }
 
 .grid .item:nth-child(2) {
-  background-image: url(../IMG/banner_4_2.jpg);
+  background-image: url(../IMG/3.jpeg);
 }
 
 .grid .item:nth-child(3) {
-  background-image: url(../IMG/belom\ dipake/images-777x437.jpg);
+  background-image: url(../IMG/1.jpg);
 }
 
 .grid .item:nth-child(4) {
-  background-image: url(../IMG/6935-678x381.jpg);
+  background-image: url(../IMG/4.jpg);
 }
 
 /******************************************************End Grid Layout*********************************************************/
@@ -800,7 +803,6 @@ ul li {
   position: relative;
   bottom: 350px;
   align-items: flex-start;
-  background-image: linear-gradient(15deg, #0f4667 0%, #2a6973 150%);
   display: flex;
   min-height: 100%;
   justify-content: center;
@@ -831,6 +833,9 @@ ul li {
 .card {
   list-style: none;
   position: relative;
+  width: 300px;
+  left: 25px;
+  margin-right: 100px;
 }
 
 .card:before {
@@ -939,14 +944,14 @@ ul li {
 /***************************************************Start Hover Efect**********************************************************/
 .kontainer {
   width: 100%;
-  padding: 0 30px 0;
+  padding: 0 100px 0;
   display: flex;
   justify-content: space-between;
 }
 
 .kontainer .kard {
   position: relative;
-  margin-top: 100px;
+  margin-top: 93px;
   cursor: pointer;
 }
 
@@ -967,7 +972,6 @@ ul li {
 }
 
 .kontainer .kard:hover .muka.muka1 {
-  background: #ff0057;
   transform: translateY(0);
 }
 
@@ -981,23 +985,21 @@ ul li {
 }
 
 .kontainer .kard .muka.muka1 .countent img {
-  max-width: 100px;
+  width: 100%;
+  height: 200px;
+  margin-bottom: 5px;
 }
 
 .kontainer .kard .muka.muka1 .countent h3 {
-  margin: 10px 0 0;
+  margin: -100px 0 0;
   padding: 0;
   color: #fff;
-  text-align: center;
   font-size: 1.5em;
 }
 
 .kontainer .kard .muka.muka2 {
   position: relative;
   background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 20px;
   box-sizing: border-box;
   box-shadow: 0 20px 50px rgba(0, 0, 0, 0.8);
@@ -1011,7 +1013,6 @@ ul li {
 .kontainer .kard .muka.muka2 .countent a {
   margin: 15px 0 0;
   display: inline-block;
-  text-decoration: none;
   font-weight: 900;
   color: #333;
   padding: 5px;

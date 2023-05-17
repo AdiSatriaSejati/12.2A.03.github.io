@@ -22,9 +22,9 @@ pauseButton.addEventListener("click", function () {
   vid.classList.toggle("stopfade");
   if (vid.paused) {
     vid.play();
-    pauseButton.innerHTML = "Pause";
+    pauseButton.innerHTML = "Jeda";
   } else {
     vid.pause();
-    pauseButton.innerHTML = "Play";
+    pauseButton.innerHTML = "Putar";
   }
 });

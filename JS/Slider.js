@@ -24,7 +24,12 @@ const move = (S, T) => {
   slider.style.transform = `translateX(-${S}%)`;
   trail[T].classList.add("active");
 };
-const tl = gsap.timeline({ defaults: { duration: 0.6, ease: "power2.inOut" } });
+const tl = gsap.timeline({
+  defaults: {
+    duration: 0.6,
+    ease: "power2.inOut"
+  }
+});
 const animate = () => tl.restart();
 const trailUpdate = () => {
   if (value === 0) {
@@ -72,11 +77,16 @@ const touchSlide = (() => {
   slider.addEventListener("touchstart", (e) => {
     start = e.touches[0].clientX;
     sliderWidth = slider.clientWidth / trail.length;
+  }, {
+    passive: true
   });
+
   slider.addEventListener("touchmove", (e) => {
     e.preventDefault();
     move = e.touches[0].clientX;
     change = start - move;
+  }, {
+    passive: true
   });
   const mobile = (e) => {
     change > sliderWidth / 4 ? slide("increase") : null;

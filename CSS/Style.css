@@ -598,32 +598,10 @@ ul li {
     margin-bottom: 250px;
   }
 
-  .grid {
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 50vh 30vh repeat(7, minmax(20vh, 1fr));
-    grid-template-areas:
-      "hero   hero"
-      "big1   big1"
-      "med1   med1"
-      "med2   med2";
-  }
-
   @media screen and (min-width: 750px) {
     .grid {
       grid-template-columns: repeat(5, 1fr);
       grid-template-rows: repeat(5, 50vh);
-      grid-template-areas:
-        "hero   hero   hero   med1   med1"
-        "hero   hero   hero   med2   med2"
-        "big1   big1   big1   big1   big1"
-        "big1   big1   big1   big1   big1";
-    }
-  }
-
-  @media screen and (min-width: 1400px) {
-    .grid {
-      grid-template-columns: repeat(6, 1fr);
-      grid-template-rows: auto;
       grid-template-areas:
         "hero   hero   hero   med1   med1"
         "hero   hero   hero   med2   med2"
@@ -678,17 +656,6 @@ ul li {
 
   .grid .item:nth-child(4) {
     flex: 0 1 calc(100% - 1.5vw);
-  }
-
-  @media screen and (min-width: 750px) {
-    .grid .item:nth-child(1) {
-      flex: 0 1 calc(60% - 1.5vw);
-    }
-
-    .grid .item:nth-child(2) {
-      flex: 0 1 calc(40% - 1.5vw);
-      height: 50vh;
-    }
   }
 
   @media screen and (min-width: 1400px) {
@@ -776,18 +743,6 @@ ul li {
   grid-row-gap: var(--spacing-l);
   max-width: var(--width-container);
   width: 100%;
-}
-
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
 
 .card {

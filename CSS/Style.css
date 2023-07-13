@@ -202,7 +202,7 @@ ul li {
 /*************************************************Start Header Secondary*******************************************************/
 .logo {
   position: absolute;
-  width: 325px;
+  width: 20%;
   top: 55px;
   left: 20px;
   z-index: 12;
@@ -458,7 +458,7 @@ ul li {
 
 .kontainer .kard {
   position: relative;
-  margin-top: 93px;
+  top: 95px;
   cursor: pointer;
 }
 
@@ -533,18 +533,16 @@ ul li {
 
 /****************************************************End Hover Efect***********************************************************/
 /******************************************************Start Footer************************************************************/
-.Animated {
-  width: 99.5%;
-  height: 98%;
+footer {
+  width: 100%;
   position: absolute;
-  bottom: 5px;
-  background: radial-gradient(circle,
-      rgba(0, 0, 0, 1) 0%,
-      rgba(0, 9, 92, 1) 100%);
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
+    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
   color: #fff;
-  padding: 100px 0 5px;
-  border-radius: 2.5%;
-  font-size: 14px;
+  padding: 100px 0 30px;
+  border-top-left-radius: 60px;
+  font-size: 13px;
   line-height: 20px;
 }
 
@@ -574,6 +572,50 @@ ul li {
   margin-left: 25px;
 }
 
+.col ul li {
+  list-style: none;
+  margin-bottom: 12px;
+}
+
+.col ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.col form {
+  padding-bottom: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 50px;
+}
+
+.col form .fa-regular {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.col form input {
+  width: 100%;
+  background: transparent;
+  color: #ccc;
+  border: 0;
+  outline: none;
+}
+
+.col form button {
+  background: transparent;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.col form button .fa-solid {
+  font-size: 16px;
+  color: #ccc;
+}
+
 .col h1 {
   width: 100%;
   margin-bottom: 25px;
@@ -589,44 +631,11 @@ ul li {
 }
 
 .email-id {
-  width: 100%;
+  width: fit-content;
   border-bottom: 1px solid #ccc;
   margin: 20px 0;
 }
 
-form {
-  padding-bottom: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  border-bottom: 1px solid #ccc;
-  margin-bottom: 50px;
-}
-
-form .fa-regular {
-  font-size: 18px;
-  margin-right: 10px;
-}
-
-form input {
-  width: 100%;
-  background: transparent;
-  border: none;
-  color: #ccc;
-  outline: none;
-}
-
-form button {
-  background: transparent;
-  border: 0;
-  outline: none;
-  cursor: pointer;
-}
-
-form button .fa-solid {
-  font-size: 18px;
-  color: #ccc;
-}
 
 .social-icons .fa-brands {
   width: 40px;
@@ -634,7 +643,7 @@ form button .fa-solid {
   border-radius: 60%;
   text-align: center;
   line-height: 40px;
-  font-size: 30px;
+  font-size: 20px;
   color: #000;
   background: #fff;
   margin-right: 5px;
@@ -642,18 +651,15 @@ form button .fa-solid {
 }
 
 hr {
-  border-width: 1.5px;
-  position: absolute;
-  bottom: 50px;
-  left: 0;
-  width: 100%;
+  width: 90%;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  margin: 20px auto;
 }
 
 .copyright {
-  width: 100%;
   text-align: center;
-  font-size: 18px;
-  margin-top: 5px;
+  font-weight: 600;
 }
 
 .underline {
@@ -663,6 +669,7 @@ hr {
   border-radius: 3px;
   position: relative;
   bottom: 15px;
+  left: 0;
   overflow: hidden;
 }
 
@@ -687,35 +694,95 @@ hr {
   }
 }
 
-footer {
-  width: 100%;
-  height: 450px;
-  position: absolute;
-  display: grid;
-  place-items: center;
-  overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 10px 0px,
-    rgba(0, 0, 0, 0.5) 0px 2px 25px 0px;
-}
-
-footer::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(to right, maroon, black);
-  transform-origin: center;
-  animation: box 10s linear infinite;
-}
-
-@keyframes box {
-  0% {
-    transform: rotate(0);
-  }
-
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
 /*******************************************************End Footer*************************************************************/
+@media (max-width: 1058px) {}
+
+@media (max-width: 991px) {}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 360px) {
+  .container {
+    bottom: 215px;
+  }
+
+  .prev,
+  .next,
+  .trail {
+    display: none;
+  }
+
+  .logo {
+    position: absolute;
+    width: 40%;
+    top: 10px;
+    left: 5px;
+  }
+
+  .vid {
+    position: absolute;
+    width: 100%;
+    top: 157px;
+  }
+
+  #polina {
+    height: 120px;
+    width: 63%;
+    padding: 1rem;
+    top: -145px;
+    left: 40%;
+    font-weight: 300;
+    font-size: 7px;
+  }
+
+  #polina button {
+    width: 40%;
+    padding: 0.1rem;
+    font-size: 10px;
+  }
+
+  .smoothscroll {
+    display: none;
+  }
+
+  .topleftnav {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .kontainer {
+    position: absolute;
+    display: grid;
+    right: 70px;
+    top: 110px;
+  }
+
+
+  .kontainer .kard .muka {
+    height: 170px;
+  }
+
+  .kontainer .kard .muka.muka1 {
+    transform: translateY(70px);
+  }
+
+  footer {
+    top: 206%;
+  }
+
+  .col {
+    flex-basis: 100%;
+  }
+
+  .col:nth-child(2),
+  .col:nth-child(3) {
+    flex-basis: 100%;
+  }
+
+  .copyright {
+    font-size: 14px;
+  }
+}

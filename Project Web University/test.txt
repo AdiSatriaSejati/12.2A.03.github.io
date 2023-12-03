@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html class="home" lang="id">
+    <head>
+        <title>Beranda | Universitas Bina Sarana Informatika</title>
+        <link rel="icon" href="Ico-BSI.ico" type="image/x-icon">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+        <header>
+            <div class="topleftnav">
+                <a href="https://repository.bsi.ac.id/">Repository</a>
+                <b>|</b>
+                <a href="https://kemahasiswaan.bsi.ac.id/">Kemahasiswaan</a>
+                <b>|</b>
+                <a href="https://pintek.id/">Cicilan Biaya Kuliah</a>
+                <b>|</b>
+                <a href="http://career.bsi.ac.id/">Pusat Karir</a>
+                <b>|</b>
+                <a href="https://staff.bsi.ac.id/">Karyawan</a>
+                <div class="language">
+                    <button class="language-selected"><span>Bahasa</span><i
+                            class="fa-solid fa-earth-americas fa-2xl"></i>
+                        <ul class="droplang">
+                            <li><a href="index.html" class="id">Indonesia</a></li>
+                            <li><a href="en/index.html" class="en">English</a></li>
+                        </ul>
+                    </button>
+                </div>
+                <div class="toprightnav">
+                    <a href="https://elibrary.bsi.ac.id/">E-Perpustakaan</a>
+                    <b>|</b>
+                    <a href="http://elearning.bsi.ac.id/">E-Pembelajaran</a>
+                    <b>|</b>
+                    <a href="https://ejournal.bsi.ac.id/ejurnal/">E-Jurnal</a>
+                    <b>|</b>
+                    <a href="http://alumni.bsi.ac.id/">Alumni</a>
+                    <b>|</b>
+                    <a href="https://www.bsi.ac.id/ubsi/kontak-kami.ajax">Kontak</a>
+                </div>
+            </div>
+        </header>
+    </body>
+</html>
